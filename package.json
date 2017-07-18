@@ -1,0 +1,22 @@
+{
+  "name": "funny-create",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.11.0"
+  },
+  "scripts": {
+    "funny-create": "node ./src/index.js"
+  },
+  "bin": {
+    "funny-create": "./src/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
