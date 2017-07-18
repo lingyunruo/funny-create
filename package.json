@@ -1,15 +1,17 @@
 {
   "name": "funny-create",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "./src/index.js",
   "directories": {
     "example": "example"
   },
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "colors": "^1.1.2",
     "commander": "^2.11.0"
+  },
+  "devDependencies": {
+
   },
   "scripts": {
     "funny-create": "node ./src/index.js"
