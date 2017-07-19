@@ -1,18 +1,29 @@
 #!/usr/bin/env node
 
+require('babel-register');
+require("babel-polyfill");
+
+
 const fs = require('fs');
 const path = require('path');
 const program = require('commander');
 const color = require('colors');
 
+const start = require('./server');
 
 program.version('1.0.0')
     .option('init', '')
-    .parse(process.argv)
+    .option('server')
+    .parse(process.argv);
 
 
 const demoDir = path.join(__dirname, '../demo');
 const projectDir = process.cwd();
+
+
+if(program.server) {
+    start();
+}
 
 if(program.init) {
 
