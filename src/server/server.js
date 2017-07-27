@@ -1,11 +1,13 @@
 const fs = require('fs');
 const koa = require('koa');
+const opn = require('opn');
 
-module.exports = function() {
+
+module.exports = function () {
 
     const app = new koa();
 
-    app.use(async function(ctx, next) {
+    app.use(async function (ctx, next) {
         await next();
         console.log('lingyun');
     });
@@ -15,6 +17,6 @@ module.exports = function() {
     });
 
     app.listen(3000);
-    console.log(`server is start at port:3000`);
 
+    opn(`http://127.0.0.1:3000`);
 }
