@@ -5,7 +5,7 @@ const color = require('colors');
 
 
 
-const demoDir = path.join(__dirname, './demo');
+const demoDir = path.join(__dirname, '../../demo');
 const projectDir = process.cwd();
 
 
